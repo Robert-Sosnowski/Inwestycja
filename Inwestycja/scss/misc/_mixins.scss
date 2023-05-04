@@ -1,0 +1,26 @@
+// xs - max-width: 575px,
+// sm - min-width: 576px,
+// md - min-width: 768px,
+// lg - min-width: 992px,
+// xl - min-width: 1200px,
+// hd - min-width: 1600px.
+@mixin sm(){
+    @media (max-width: 576px){
+      @content
+    }
+  }
+  @mixin md(){
+    @media (max-width: 768px){
+      @content
+    }
+  }
+  @mixin lg(){
+    @media (max-width: 992px){
+      @content
+    }
+  }
+  @mixin xl(){
+    @media (max-width: 1200px){
+      @content
+    }
+  }
