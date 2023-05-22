@@ -1,6 +1,8 @@
 .header {
     height: 70px;
+    width: 100%;
     box-shadow: $primaryShadowColor;
+    background-color: $pageBackground;
     position: fixed;
   
     &__container {
