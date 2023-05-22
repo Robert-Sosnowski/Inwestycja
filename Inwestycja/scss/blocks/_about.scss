@@ -1,0 +1,20 @@
+.about{
+    height: 70px;
+    box-shadow: $primaryShadowColor;
+    position: fixed;
+  
+    &__container {
+      display: flex;
+      align-items: center;
+    }
+    &__title{
+        font-family: $fontRaleway;
+        font-size: 60px;
+        color: $primaryColor;
+    }
+    &__description{
+        font-family: $fontOpenSans;
+        font-size: 45px;
+        color:$secondaryColor
+    }
+}

@@ -746,8 +746,8 @@ body {
   }
 }
 .specification__single {
-  background-color: #ffffff;
-  border: 1px solid #E8E9ED;
+  color: #fc8548;
+  border: 1px solid #e8e9ed;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -935,5 +935,166 @@ body {
 .specification__image img {
   position: relative;
   z-index: 2;
+}
+
+.about {
+  height: 70px;
+  box-shadow: rgba(7, 172, 230, 0.16);
+  position: fixed;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+}
+.about__title {
+  font-family: "Raleway", sans-serif;
+  font-size: 60px;
+  color: #00ba7c;
+}
+.about__description {
+  font-family: "Open-Sans", sans-serif;
+  font-size: 45px;
+  color: #fc8548;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 768px) {
+  .form {
+    margin-top: 20px;
+  }
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+}
+.form__field:first-of-type {
+  margin-bottom: 42px;
+}
+.form__label {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00ba7c;
+  line-height: 0.9rem;
+  letter-spacing: 3px;
+  font-size: 0.6875rem;
+}
+.form__input {
+  border: none;
+  border-bottom: 1px solid #a5a5a5;
+  background-color: transparent;
+  line-height: 2.625rem;
+}
+.form__consent {
+  margin-top: 30px;
+}
+.form__checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 1.375rem;
+}
+.form__checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.form__checkbox input:checked ~ .checkbox {
+  background-image: url(../../assets/iconmonstr-check-mark-lined.svg);
+  background-position: center;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+.form__checkbox .checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border: 1px solid #a5a5a5;
+  border-radius: 4px;
+}
+.form__checkbox .consent__text {
+  margin: 0 10px;
+  font-size: 0.75rem;
+  color: #00ba7c;
+  line-height: 17px;
+}
+.form .btn {
+  font-size: 0.8125rem;
+  padding: 20px 97px;
+  align-self: flex-end;
+  margin-top: 20px;
+}
+
+.contact {
+  padding: 80px 100px 100px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 15px;
+  }
+}
+.contact__column {
+  width: 50%;
+}
+@media (max-width: 768px) {
+  .contact__column {
+    width: 100%;
+  }
+}
+.contact__title {
+  font-size: 3.0625rem;
+  line-height: 3.6875rem;
+}
+.contact__instruction {
+  margin: 22px 0 42px;
+  font-size: 1rem;
+  line-height: 1.375rem;
+}
+@media (max-width: 768px) {
+  .contact__instruction {
+    margin: 5px 0 35px;
+  }
+}
+.contact__details {
+  display: flex;
+  justify-content: flex-start;
+  color: #00ba7c;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .contact__details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+.contact__details .details__item {
+  color: #fc8548;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .contact__details .details__item {
+    margin-bottom: 10px;
+  }
+}
+.contact__details .details__item:first-of-type {
+  margin-right: 20px;
+}
+.contact__details .details__item img {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=main.css.map */
