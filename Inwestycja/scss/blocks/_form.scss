@@ -109,12 +109,14 @@
     &__title {
       font-size: 3.0625rem;
       line-height: 3.6875rem;
+      color: #fff;
     }
   
     &__instruction {
       margin: 22px 0 42px;
       font-size: 1rem;
       line-height: 1.375rem;
+      color:#fff;
   
       @include md() {
         margin: 5px 0 35px;
